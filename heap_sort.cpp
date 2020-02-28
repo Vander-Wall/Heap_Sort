@@ -40,7 +40,7 @@ void heap_sort(int tree[],int n){
 	build_heap(tree,n);
 	for(int i = n-1;i >= 0;i--){
 		swap(tree,i,0);
-		heapify(tree,i,0);
+		heapify(tree,i,0);// i表示当前节点个数，每次循环需要将堆的尺寸缩小1
 	}
 }
 
