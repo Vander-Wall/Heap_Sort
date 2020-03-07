@@ -11,10 +11,10 @@ void swap(int arr[],int i,int j){
 	arr[j] = temp;
 }
 
-void heapify(int tree[],int n,int i){
+void heapify(int tree[],int n,int i){ // n stands for the amount of nodes
 	
-	int c1 = 2 * i + 1;
-	int c2 = 2 * i + 2;
+	int c1 = 2 * i + 1;  // child 1
+	int c2 = 2 * i + 2;  // child 2
 	int max = i;
 	if(c1 < n && tree[c1] > tree[max]){
 		max = c1;
